@@ -13,16 +13,11 @@
   <div v-else> User </div>
 
 
-  <img alt="Vue logo" src="./assets/logo.png">
+  <img alt="Vue logo" src="./assets/capa.jpg" height="244px" width="326px">
 
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HelloWorld msg="Brothers page"/>
 
-  <div>
-    <div v-for="obj in todos"
-    v-bind:key = "obj.id">
-      {{ obj.title }}
-    </div>
-  </div>
+
 </template>
 
 <script>
@@ -41,39 +36,8 @@ export default {
       firstName: 'Carlos',
       lastName: 'Matos',
       showName: false,
-      accessLevel:'admin',
-      todos:[ 
-        {
-          "userId": 1,
-          "id": 1,
-          "title": "delectus aut autem",
-          "completed": false
-        },
-        {
-          "userId": 1,
-          "id": 2,
-          "title": "quis ut nam facilis et officia qui",
-          "completed": false
-        },
-        {
-          "userId": 1,
-          "id": 3,
-          "title": "fugiat veniam minus",
-          "completed": false
-        },
-        {
-          "userId": 1,
-          "id": 4,
-          "title": "et porro tempora",
-          "completed": true
-        },
-        {
-          "userId": 1,
-          "id": 5,
-          "title": "laboriosam mollitia et enim quasi adipisci quia provident illum",
-          "completed": false
-        }
-      ],
+      accessLevel:'admin'
+      
     }
   }
 }

@@ -2,16 +2,15 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>
-      XPTOFor a guide and recipes on how to configure / customize this project,<br>
-      check out the
+      This page was made to test Vue js.
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
     </p>
-    <h3>Installed CLI Plugins</h3>
+    <h3>Social Network</h3>
     <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
+      <li><a href="https://www.instagram.com/carloshenriquematos97/?next=%2F" target="_blank" rel="noopener">Instagram Carlos</a></li>
+      <li><a href="https://github.com/CarlosHenriqueMatos" target="_blank" rel="noopener">Github</a></li>
     </ul>
-    <h3>Essential Links</h3>
+    <h3>Just for fun</h3>
     <ul>
       <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
       <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
@@ -19,7 +18,7 @@
       <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
       <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
     </ul>
-    <h3>Ecosystem</h3>
+    <h3>Tests et al.</h3>
     <ul>
       <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
       <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>

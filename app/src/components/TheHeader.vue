@@ -18,32 +18,26 @@ export default {
                 {
                 "userId": 1,
                 "id": 1,
-                "title": "delectus aut autem",
+                "title": "Carlos Matos",
                 "completed": false
                 },
                 {
                 "userId": 1,
                 "id": 2,
-                "title": "quis ut nam facilis et officia qui",
+                "title": "Anna Matos",
                 "completed": false
                 },
                 {
                 "userId": 1,
                 "id": 3,
-                "title": "fugiat veniam minus",
+                "title": "IFES",
                 "completed": false
                 },
                 {
                 "userId": 1,
                 "id": 4,
-                "title": "et porro tempora",
+                "title": "Ensino Médio, Superior e Mestrado",
                 "completed": true
-                },
-                {
-                "userId": 1,
-                "id": 5,
-                "title": "laboriosam mollitia et enim quasi adipisci quia provident illum",
-                "completed": false
                 }
             ]
         }
@@ -52,12 +46,12 @@ export default {
 </script>
 <style>
     .todos-item{
-        background: #000;
+        background: #d8d2d2;
         margin: 0 0 5px 0;
         padding: 3px 6px;
     }
     .header {
-        background: #000;
+        background: #dedcdc;
         color: #fff;
     }
 </style>

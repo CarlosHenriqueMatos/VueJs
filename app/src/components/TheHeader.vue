@@ -33,7 +33,7 @@ export default {
                 {
                 "userId": 1,
                 "id": 2,
-                "title": "Conectando você aos seus objetivos",
+                "title": "Conectando objetivos",
                 "completed": false
                 }
             ]

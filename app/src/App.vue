@@ -6,16 +6,16 @@
     Sobrenome: {{ lastName }}
   </div>
 
-  <div v-if="accessLevel==='admin'" > Admin </div>
+  <div v-if="accessLevel==='admin'" > Perfil Administrador </div>
 
   <div v-else-if="accessLevel==='marketing'"> Marketing </div>
   
   <div v-else> User </div>
 
 
-  <img alt="Vue logo" src="./assets/capa.jpg" height="244px" width="326px">
+  <img alt="Vue logo" src="./assets/econocargo.png">
 
-  <HelloWorld msg="Brothers page"/>
+  <HelloWorld msg="Econocargo Gestão Colaborativa"/>
 
 
 </template>
@@ -33,8 +33,8 @@ export default {
   data(){
     return{
       showHeader: true,
-      firstName: 'Carlos',
-      lastName: 'Matos',
+      firstName: 'Econocargo',
+      lastName: 'Gestão Colaborativa',
       showName: false,
       accessLevel:'admin'
       

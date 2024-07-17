@@ -1,7 +1,7 @@
 <template>
     <div>
         <div 
-            v-for="(obj, index) in todos"
+            v-for="(obj) in todos"
             :key = "obj.id"
             
             class="todos-item"
@@ -11,7 +11,7 @@
             v-if= "obj.imgSrc"
             v-bind:src = "obj.imgSrc"
         >
-        {{ index+1 }} - {{ obj.title }}
+        {{ obj.title }}
         </div>
     </div>
 </template>
@@ -27,26 +27,14 @@ export default {
                 {
                 "userId": 1,
                 "id": 1,
-                "title": "Carlos Matos",
+                "title": "Econocargo",
                 "completed": false
                 },
                 {
                 "userId": 1,
                 "id": 2,
-                "title": "Anna Matos",
+                "title": "Conectando você aos seus objetivos",
                 "completed": false
-                },
-                {
-                "userId": 1,
-                "id": 3,
-                "title": "IFES",
-                "completed": false
-                },
-                {
-                "userId": 1,
-                "id": 4,
-                "title": "Ensino Médio, Superior e Mestrado",
-                "completed": true
                 }
             ]
         }

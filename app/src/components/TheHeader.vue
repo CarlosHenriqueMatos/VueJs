@@ -1,10 +1,17 @@
 <template>
     <div>
-        <div v-for="(obj, index) in todos"
-            v-bind:key = "obj.id"
+        <div 
+            v-for="(obj, index) in todos"
+            :key = "obj.id"
+            
             class="todos-item"
         >
-            {{ index+1 }} - {{ obj.title }}
+        <!-- v-bind:key -->
+        <img
+            v-if= "obj.imgSrc"
+            v-bind:src = "obj.imgSrc"
+        >
+        {{ index+1 }} - {{ obj.title }}
         </div>
     </div>
 </template>
@@ -14,6 +21,8 @@ export default {
     name: 'App',
     data(){
       return{
+        imgSrc: 'https://placehold.co/150',
+        imgAlt: 'Foto Carlos',
         todos:[ 
                 {
                 "userId": 1,

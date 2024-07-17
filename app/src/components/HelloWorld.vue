@@ -5,9 +5,28 @@
     </h1>
 
     <div>
-      <button @click="onClick()">
+      <button @click.once="onClick">
         Enviar
       </button>
+      <br>
+
+      <div @mouseover="onMouseOver"
+           @mouseout="onMouseOut">
+        Mouse Over
+      </div>
+      <br>
+      <form 
+        action="https://google.com"
+        @submit.prevent="onSubmit"
+      >
+        <input
+          type="text"
+          @keyup.enter="onKeyup"
+        >
+        <button type="submit">
+          Enviar
+        </button>
+      </form>
     </div>
 
     <div>
@@ -143,8 +162,21 @@ export default {
     }
   },
   methods:{
-    onClick(){
-      console.log('click');
+    onClick($evt){
+      console.log('click', $evt);
+    },
+    onMouseOver($evt){
+      console.log('mouse over', $evt);
+    },
+    onMouseOut($evt){
+      console.log('mouse out', $evt);
+    },
+    onSubmit($evt){
+      console.log('submit', $evt);
+    },
+    onKeyup($evt){
+      console.log('onKeyup', $evt);
+
     }
   }
 }

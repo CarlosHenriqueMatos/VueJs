@@ -5,6 +5,12 @@
     </h1>
 
     <div>
+      <button @click="onClick()">
+        Enviar
+      </button>
+    </div>
+
+    <div>
       One-way data binding <br>
       Two-way data binding <br>
       v-model -> formulários
@@ -134,6 +140,11 @@ export default {
           styleClass:{'color':'white', 'backgroundColor':'black', 'font-size':'20px'},
           isHome:true,
           colors:[],
+    }
+  },
+  methods:{
+    onClick(){
+      console.log('click');
     }
   }
 }

@@ -1,3 +1,5 @@
+<!-- Qual a diferença de colocar o main.js lendo do App.vue e do HelloWorld.vue? e porque não roda quando eu faço o contrario
+ -->
 <template>
   <TheHeader v-if="showHeader"/>
 
@@ -5,6 +7,12 @@
     Nome: {{ firstName }}
     Sobrenome: {{ lastName }}
   </div>
+
+
+    <div>
+      {{ fullName }}
+    </div>
+
 
   <div v-if="accessLevel==='admin'" > Perfil Administrador </div>
 
@@ -36,10 +44,19 @@ export default {
       firstName: 'Econocargo',
       lastName: 'Gestão Colaborativa',
       showName: false,
-      accessLevel:'admin'
+      accessLevel:'admin',
+      user:{
+        firstName: "Carlos",
+        lastName: "Matos",
+      }
       
     }
-  }
+  },
+  computed: {
+    fullName(){
+      return `${this.user.firstName} ${this.user.lastName}`
+    },
+  },
 }
 </script>
 

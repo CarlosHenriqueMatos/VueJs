@@ -1,7 +1,7 @@
 <template>
     <div>
         <div 
-            v-for="(obj) in todos"
+            v-for="obj in uncompletedTodos"
             :key = "obj.id"
             
             class="todos-item"
@@ -11,12 +11,14 @@
             v-if= "obj.imgSrc"
             v-bind:src = "obj.imgSrc"
         >
-        {{ obj.title }}
+        {{ obj.title }} <span>{{ todos.completed }}</span>
         </div>
     </div>
 </template>
 
 <script>
+
+
 export default {
     name: 'App',
     data(){
@@ -39,8 +41,19 @@ export default {
             ]
         }
     }
+,
+computed:{
+    uncompletedTodos(){
+        return this.todos.filter(todo => !todo.completed);
+    },
+    },
+methods:{
+
+}
 }
 </script>
+
+
 <style>
     .todos-item{
         background: #d8d2d2;

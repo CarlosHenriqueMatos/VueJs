@@ -4,9 +4,11 @@
       Curso Vue 3
     </h1>
 
+
+
     <div>
       <button @click.once="onClick">
-        Enviar
+        Enviar, com teste
       </button>
       <br>
 
@@ -158,12 +160,12 @@ export default {
           pClass: ['text', 'text-home'],
           styleClass:{'color':'white', 'backgroundColor':'black', 'font-size':'20px'},
           isHome:true,
-          colors:[],
+          colors:[]
     }
-  },
+  },  
   methods:{
     onClick($evt){
-      console.log('click', $evt);
+      console.log('click',$evt);
     },
     onMouseOver($evt){
       console.log('mouse over', $evt);
@@ -198,10 +200,7 @@ li {
 a {
   color: #42b983;
 }
-</style>
-
-<style>
-    .title{
+.title{
         font-size: 20px;
         color: blue;
     }
@@ -212,5 +211,4 @@ a {
     .text {
       color:blue;
     }
-
 </style>

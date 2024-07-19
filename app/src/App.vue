@@ -24,19 +24,21 @@
   <img alt="Vue logo" src="./assets/econocargo.png">
 
   <HelloWorld msg="Econocargo Gestão Colaborativa"/>
-
+  <CicloDeVida/>
 
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import TheHeader from './components/TheHeader.vue';
+import CicloDeVida from './components/CicloDeVida.vue';
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    TheHeader
+    TheHeader,
+    CicloDeVida,
   },
   data(){
     return{

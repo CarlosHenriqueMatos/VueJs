@@ -68,7 +68,8 @@ export default {
                 "title": "POT XT CAST",
                 "completed": true
                 }
-            ]
+            ],
+            name:""
         }
     }
 ,

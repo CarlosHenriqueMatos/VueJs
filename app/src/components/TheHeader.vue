@@ -7,6 +7,10 @@
             
             class="todos-item"
         >
+        <input
+            v-model="obj.completed"
+            type="checkbox"
+        >
         <!-- v-bind:key -->
         <img
             v-if= "obj.imgSrc"
@@ -20,6 +24,10 @@
             :key = "obj.id"
             
             class="todos-item"
+        >
+        <input 
+        v-model="obj.completed"
+        type = "checkbox"
         >
         {{ obj.title }}
         </div>
@@ -52,6 +60,12 @@ export default {
                 "userId": 1,
                 "id": 3,
                 "title": "XPTO",
+                "completed": true
+                },
+                {
+                "userId": 1,
+                "id": 4,
+                "title": "POT XT CAST",
                 "completed": true
                 }
             ]

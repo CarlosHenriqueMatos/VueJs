@@ -1,5 +1,6 @@
 <template>
     <div>
+        <h2>Todos em aberto</h2>
         <div 
             v-for="obj in uncompletedTodos"
             :key = "obj.id"
@@ -11,7 +12,16 @@
             v-if= "obj.imgSrc"
             v-bind:src = "obj.imgSrc"
         >
-        {{ obj.title }} <span>{{ todos.completed }}</span>
+        {{ obj.title }}
+        </div>
+        <h2>Todos completas</h2>
+        <div 
+            v-for="obj in completedTodos"
+            :key = "obj.id"
+            
+            class="todos-item"
+        >
+        {{ obj.title }}
         </div>
     </div>
 </template>
@@ -37,6 +47,12 @@ export default {
                 "id": 2,
                 "title": "Conectando objetivos",
                 "completed": false
+                },
+                {
+                "userId": 1,
+                "id": 3,
+                "title": "XPTO",
+                "completed": true
                 }
             ]
         }
@@ -45,6 +61,9 @@ export default {
 computed:{
     uncompletedTodos(){
         return this.todos.filter(todo => !todo.completed);
+    },
+    completedTodos(){
+        return this.todos.filter(todo => todo.completed);
     },
     },
 methods:{
